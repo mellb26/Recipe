@@ -6,10 +6,10 @@ import { Dessert } from "./components/Dessert";
 import { Mains } from "./components/Mains";
 import { Starters } from "./components/Starters";
 import { Footer } from "./components/Footer"
+import Weather from "./components/Weather"
 function App() {
   return (
     <>
- 
       <BrowserRouter>
         <Routes>
           <Route
@@ -46,9 +46,16 @@ function App() {
               </>
             }
           />
+          <Route
+            path="Home/Weather"
+            element={
+              <>
+                <NavBar /> <Weather />
+              </>
+            }
+          />
         </Routes>
       </BrowserRouter>
-  
     </>
   );
 }

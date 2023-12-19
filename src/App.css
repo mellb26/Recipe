@@ -7,15 +7,12 @@ body {
     Times,
     serif;
   height: 250vh;
-
 }
-
 background-tint {
   background-color: rgba(27, 27, 27, 0.5);
   /* Tint color */
   background-blend-mode: multiply;
 }
-
 .container1 {
   align-content: center;
   display: flex;
@@ -23,23 +20,16 @@ background-tint {
   justify-content: center;
   /* align-items: center; */
   flex-flow: row;
-
 }
-
 .tinted-background {
   position: relative;
-  background-image: url("Untitled\ design.png");
-  background-size: 100% 100%;
-
+  background-image: url("Vegetarian\ Recipes.jpg");
+  background-size: 100% 75%;
   background-position: center;
-
   height: 250vh;
   z-index: -1;
-
 }
-
 .tinted-background::before {
-
   content: "";
   position: absolute;
   top: 0;
@@ -47,8 +37,7 @@ background-tint {
   width: 100%;
   height: 100%;
   background-color: rgba(27, 27, 27, 0.5);
-  z-index: 1;
-
+  z-index: 0;
 }
 
 h1 {
@@ -56,53 +45,72 @@ h1 {
   margin-top: 0%;
   font-family: Impact,
     fantasy;
+  font-size: 72px;
+  background-color: #000000;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-}
+    color: white;
+    height: 80px;
+    width: 100%;
+    font-family: Georgia,
+      "Times New Roman",
+      Times,
+      serif;
+      z-index: 1;
+  }
+
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   /* width: 200px; */
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.2);
   width: 10%;
   height: 100%;
   position: fixed;
   overflow: auto;
-
 }
-
 li a {
   display: block;
   color: #ffffff;
   padding: 8px 16px;
   text-decoration: none;
-
+  font-family: Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+  font-weight: bold;
+  text-align: center;
 }
-
 /* Change the link color on hover */
 li a:hover {
   background-color: #072916;
   color: rgb(255, 255, 255);
 }
-
 a {
   text-decoration: none;
-
 }
 
-.Home-card {
-  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 0.2);
-  flex-direction: row;
-  display: inline;
-  width: 1000px;
-  height: 350px;
+  .Home-card {
+      box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 0.2);
+      flex-direction: row;
+      display: inline;
+      width: 1000px;
+      height: 350px;
+      /* padding: 20px; */
+      margin: 5rem;
+      background-color: #072916;
+      color: #ffffff;
+      /* border-left: 50px solid rgb(17, 236, 27); */
+      z-index: 1;
+    
   /* padding: 20px; */
   margin: 5rem;
   background-color: #072916;
-
   color: #ffffff;
-
   /* border-left: 50px solid rgb(17, 236, 27); */
   z-index: 1;
 }
@@ -110,9 +118,6 @@ a {
 h2 {
   background-color: #072916;
   color: white;
-  border-top: 50px solid #072916;
-  /* border-left: 50px solid rgb(224, 1, 1);
-border-right: 50px solid rgb(224, 1, 1); */
   height: 80px;
   width: 100%;
   font-family: Georgia,
@@ -120,28 +125,32 @@ border-right: 50px solid rgb(224, 1, 1); */
     Times,
     serif;
   text-align: center;
-
-
-}
-
-h1 {
-  background-color: #072916;
-  color: white;
-  border-top: 50px solid#072916;
-  /* border-left: 50px solid rgb(224, 1, 1);
-    border-right: 50px solid rgb(224, 1, 1); */
-  height: 80px;
-  width: 100%;
-  font-family: Georgia,
-    "Times New Roman",
-    Times,
-    serif;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#eee, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
   color: rgb(255, 255, 255);
-  background-color: #000000;
-  height: 200px;
-  border-top: 10px solid #000000;
-text-indent: 10%;
+
+  font-family: Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+font-weight: bold;
+text-align: center;
+
+} 
+.Weather-card {
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 0.2);
+  flex-direction: row;
+  display: inline;
+    width: 1000px;
+    height: 350px;
+  margin: 5rem;
+  background-color: #072916;
+  color: #ffffff;
+  z-index: 1;
+  text-align: center;
 }
